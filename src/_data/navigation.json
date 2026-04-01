@@ -1,0 +1,20 @@
+{
+	"items": [
+		{
+			"text": "About Me",
+			"url": "/about-me/"
+		},
+		{
+			"text": "Projects",
+			"url": "/projects/"
+		},
+		{
+			"text": "Education",
+			"url": "/education/"
+		},
+		{
+			"text": "Experience",
+			"url": "/experience/"
+		}
+	]
+}
