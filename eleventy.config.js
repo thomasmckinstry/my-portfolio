@@ -2,19 +2,9 @@ export default function(eleventyConfig) {
   eleventyConfig.setInputDirectory('src');
   eleventyConfig.setOutputDirectory('dist');
   eleventyConfig.addPassthroughCopy('src/assets');
-  //eleventyConfig.addPassthroughCopy('src/projects');
-  //eleventyConfig.addPassthroughCopy('src/about-me');
-  //eleventyConfig.addPassthroughCopy('src/education');
-  //eleventyConfig.addPassthroughCopy('src/experience');
-  //eleventyConfig.addPassthroughCopy('src/_data');
+  eleventyConfig.addPassthroughCopy('src/projects');
   eleventyConfig.addCollection('projects', (collection) => {
-    return sortByDisplayOrder(collection.getFilteredByGlob('.src/projects/*.md'));
-  });
-  eleventyConfig.addCollection('experience', (collection) => {
-    return sortByDisplayOrder(collection.getFilteredByGlob('.src/experience/*.md'));
-  });
-  eleventyConfig.addCollection('education', (collection) => {
-    return sortByDisplayOrder(collection.getFilteredByGlob('.src/education/*.md'));
+    return sortByDisplayOrder(collection.getFilteredByGlob('.src/projects/*.yaml'));
   });
   // Creates and returns a collection of work that is set to be featured
   eleventyConfig.addCollection('blog', (collection) => {
