@@ -8,5 +8,7 @@
     <body>
       {% include "partials/site-head.html" %}
       <main tabindex="-1" id="main-content">{% block content %}{% endblock %}</main>
+      {% set ctaContent = cta %}
+      {% include "partials/footer.html" %}
     </body>
 </html>

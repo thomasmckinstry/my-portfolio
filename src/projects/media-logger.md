@@ -1,7 +1,19 @@
 ---
 title: Media Logger TUI
-repoLink: https://github.com/thomasmckinstry/MediaLogger-CLI
-image: assets/annotator-screenshot.png
-tags: project
-summary: Web Page Annotater is a browser extension for firefox that allows the users to take notes on any HTML web page by highlighting text and making annotations. Any notes are displayed in the sidebar on the page they were made in.
+duration: Dec. 2025 - Ongoing
+repoLink: https://github.com/thomasmckinstry/MediaLogger-TUI
+image: assets/medialogger-screenshot.png
+tags: 
+    - project
+    - featured project
+summary: A terminal user interface app designed to allow  user to log information about media (movies, books, etc.) that they have consumed or intend on consuming.
+technology:
+    - Bubbletea
+    - SQLite
+languages:
+    - Golang
+    - SQL
+concepts:
+    - Relational Databases
+    - UI/UX Design
 ---

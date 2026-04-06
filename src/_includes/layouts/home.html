@@ -3,14 +3,80 @@
 {% block content %}
 
 <h1>Projects</h1>
-{% for project in collections.project %}
-<h2>{{ project.data.title }}</h1>
-<div>{{ project.data.summary }}<div>
-    <a href={{ project.data.repoLink }}>Github Repository</a>
-    <img src={{ project.data.image }} width="500">
+{% for project in collections["featured project"] %}
+<h2>{{ project.data.title }}</h2>
+{{ project.data.duration }}
+<div>
+  {{ project.data.summary }}
+  <a href={{ project.data.repoLink }}>Github Repository</a>
+  <img src={{ project.data.image }} width="500">
+</div>
+
+<b>Technology:</b>
+<ul>
+  {% for technology in project.data.technology %}
+    <li>{{ technology }}</li>
+  {% endfor %}
+</ul>
+
+<b>Languages:</b>
+<ul>
+  {% for language in project.data.languages %}
+    <li>{{ language }}</li>
+  {% endfor %}
+</ul>
+
+<b>Concepts:</b>
+<ul>
+  {% for concept in project.data.concepts %}
+    <li>{{ concept }}</li>
+  {% endfor %}
+</ul>
+
 {% endfor %}
 
-{% set ctaContent = cta %}
-{% include "partials/footer.html" %}
+<h1>Experience</h1>
+{% for position in collections.experience %}
+<h2>{{ position.data.title }}</h2>
+{{ position.data.employer }}
+{{ position.data.location }}
+{{ position.data.duration }}
+
+<ul>
+  {% for bullet in position.data.bullets %}
+    <li>{{ bullet }}</li>
+  {% endfor %}
+</ul>
+
+<b>Technology:</b>
+<ul>
+  {% for technology in position.data.technology %}
+    <li>{{ technology }}</li>
+  {% endfor %}
+</ul>
+
+<b>Languages:</b>
+<ul>
+  {% for language in position.data.languages %}
+    <li>{{ language }}</li>
+  {% endfor %}
+</ul>
+
+<b>Concepts</b>
+<ul>
+  {% for concept in position.data.concepts %}
+    <li>{{ concept }}</li>
+  {% endfor %}
+</ul>
+{% endfor %}
+
+<h1>Education</h1>
+{% for school in collections.education %}
+<h2>{{ school.data.institution }}</h1>
+{% endfor %}
+
+<h1>About Me</h1>
+{% for me in collections.about-me%}
+{% endfor %}
 
 {% endblock %}
