@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<h1>Projects</h1>
+<h1 id="projects">Projects</h1>
 {% for project in collections["featured project"] %}
 <h2>{{ project.data.title }}</h2>
 {{ project.data.duration }}
@@ -35,7 +35,7 @@
 
 {% endfor %}
 
-<h1>Experience</h1>
+<h1 id="experience">Experience</h1>
 {% for position in collections.experience %}
 <h2>{{ position.data.title }}</h2>
 {{ position.data.employer }}
@@ -70,13 +70,30 @@
 </ul>
 {% endfor %}
 
-<h1>Education</h1>
+<h1 id="education">Education</h1>
 {% for school in collections.education %}
-<h2>{{ school.data.institution }}</h1>
+<h2>{{ school.data.institution }}</h2>
+{{ school.data.duration }}
+{{ school.data.location }}
+{{ school.data.degree }}
 {% endfor %}
 
-<h1>About Me</h1>
-{% for me in collections.about-me%}
+<h1 id="about-me">About Me</h1>
+{% for me in collections["about me"] %}
+  {{ me.data.summary }}
+  <img src={{ me.data.image }} width="500">
+  <h2>Interests</h2>
+  <ul>
+    {% for interest in me.data.interests %}
+    <li>{{ interest }}</li>
+    {% endfor %}
+  </ul>
+  <h2>Hobbies</h2>
+  <ul>
+    {% for hobby in me.data.hobbies %}
+    <li>{{ hobby }}</li>
+    {% endfor %}
+  </ul>
 {% endfor %}
 
 {% endblock %}
