@@ -1,11 +1,14 @@
+import YAML from "yaml"
+
 export default function(eleventyConfig) {
   eleventyConfig.setInputDirectory('src');
   eleventyConfig.setOutputDirectory('dist');
   eleventyConfig.addPassthroughCopy('src/assets');
   eleventyConfig.addPassthroughCopy('src/projects');
-  eleventyConfig.addCollection('projects', (collection) => {
-    return sortByDisplayOrder(collection.getFilteredByGlob('.src/projects/*.yaml'));
-  });
+
+  eleventyConfig.addDataExtension("yaml", (contents) => YAML.parse(contents));
+
+
   // Creates and returns a collection of work that is set to be featured
   eleventyConfig.addCollection('blog', (collection) => {
     return [...collection.getFilteredByGlob('./src/posts/*.md')].reverse();
