@@ -1,15 +1,7 @@
-<header role="banner" class="site-head">
-	<div class="wrapper">
-		<div class="site-head__inner">
-			<nav class="[ nav ] [ site-head__nav ] [ font-sans ]" aria-label="Primary">
-        <ul class="nav__list">
-          {% for item in navigation.items %}
-          <li>
-            <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) }}>{{ item.text }}</a>
-          </li>
-          {% endfor %}
-        </ul>
-      </nav>
-		</div>
-	</div>
+<header>  
+  <nav>
+    {% for item in navigation.items %}
+      <a href="{{ item.url }}" class=headerLink>{{ item.text }}</a>
+    {% endfor %}
+  </nav>
 </header>

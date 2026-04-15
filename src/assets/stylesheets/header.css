@@ -1,0 +1,44 @@
+header {
+  position: sticky;
+  width: 100%;
+  top: 10px;
+  height: 50px;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+}
+
+nav a {
+  background-color: #F2E5BC;
+  height: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
+  flex: 1;
+  text-align: center;
+  align-content: center;
+  border: solid;
+  border-radius: 2px;
+  border-color: #DDCCAB;
+}
+
+nav a:hover {
+  background-color: #E5D5AD;
+}
+
+footer, nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+footer, section {
+  background-color: #F2E5BC;
+}
+
+
+body {
+  background-color: #E5D5AD;
+}

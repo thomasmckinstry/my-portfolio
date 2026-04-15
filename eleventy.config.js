@@ -5,6 +5,7 @@ export default function(eleventyConfig) {
   eleventyConfig.setOutputDirectory('dist');
   eleventyConfig.addPassthroughCopy('src/assets');
   eleventyConfig.addPassthroughCopy('src/projects');
+  eleventyConfig.addPassthroughCopy('src/assets/stylesheets');
 
   eleventyConfig.addDataExtension("yaml", (contents) => YAML.parse(contents));
 
