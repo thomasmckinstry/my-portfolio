@@ -1,0 +1,146 @@
+h1 {
+  text-align: center;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25px;
+  padding: 15px;
+}
+
+.project .info {
+  display: grid;
+  margin-right: 25px;
+  padding: 10px;
+  border: solid;
+  border-radius: 2px;
+  border-color: #DDCCAB;
+  background-color: #F2E5BC;
+}
+
+img {
+  border: solid;
+  border-radius: 2px;
+  border-color: #DDCCAB;
+}
+
+.project .info a {
+  text-align: right;
+}
+
+.project .head {
+  display: flex;
+  flex-direction: row;
+}
+
+.project .duration {
+  flex: 2;
+  align-content: center;
+  text-align: right;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+}
+
+.skillcol {
+  margin: auto;
+}
+
+.job {
+  margin-bottom: 25px;
+  padding: 15px;
+}
+
+.job .head {
+  display: flex;
+  flex-direction: row;
+  border: solid;
+  border-radius: 2px;
+  border-color: #DDCCAB;
+  background-color: #F2E5BC;
+  padding: 15px;
+}
+
+.job .head .data {
+  flex: 2;
+  text-align: right;
+  align-content: center;
+}
+
+.job .content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+
+.job .info {
+  border: solid;
+  border-radius: 2px;
+  border-color: #DDCCAB;
+  background-color: #F2E5BC;
+  margin-right: 25px;
+  padding: 15px;
+  width: 100%
+}
+
+.job img {
+  border: solid;
+  border-radius: 2px;
+  border-color: #DDCCAB;
+  height: 250px;
+}
+
+.education {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+}
+
+.education .info {
+  display: flex;
+  flex-direction: row;
+  border: solid;
+  border-radius: 2px;
+  border-color: #DDCCAB;
+  background-color: #F2E5BC;
+  padding: 15px;
+  width: 100%
+}
+
+.education .data {
+  text-align: right;
+  align-content: center;
+  flex: 2;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+}
+
+.about-me .info {
+  border: solid;
+  border-radius: 2px;
+  border-color: #DDCCAB;
+  background-color: #F2E5BC;
+  padding: 15px;
+  width: 100%;
+  margin-right: 15px;
+}
+
+.about-me .extras {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-me .col {
+  margin: auto;
+}
+
+.about-me img {
+  width: 250px;
+}
