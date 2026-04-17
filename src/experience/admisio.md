@@ -20,4 +20,5 @@ concepts:
     - UI/UX Design
     - Market Research
     - Data Analysis
+image: assets/admisio_logo.jpg
 ---

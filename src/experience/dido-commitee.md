@@ -12,5 +12,6 @@ languages:
     - Python
     - SQL
 concepts:
-    - Relational Databases 
+    - Relational Databases
+image: assets/We-are-WAWU.png
 ---

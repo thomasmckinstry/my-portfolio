@@ -4,103 +4,156 @@
 
 <section>
 <h1 id="projects">Projects</h1>
+
 {% for project in collections["featured project"] %}
+<article class=project>
+<div class=info>
+<div class=head>
 <h2>{{ project.data.title }}</h2>
-{{ project.data.duration }}
-<div>
-  {{ project.data.summary }}
-  <a href={{ project.data.repoLink }}>Github Repository</a>
-  <img src={{ project.data.image }} width="500">
+<div class=duration>{{ project.data.duration }}</div>
 </div>
 
+
+  {{ project.data.summary }}
+  <a href={{ project.data.repoLink }}>Github Repository</a>
+
+<div class=skills>
+<div class=skillcol>
 <b>Technology:</b>
 <ul>
   {% for technology in project.data.technology %}
     <li>{{ technology }}</li>
   {% endfor %}
 </ul>
+</div>
 
+<div class=skillcol>
 <b>Languages:</b>
 <ul>
   {% for language in project.data.languages %}
     <li>{{ language }}</li>
   {% endfor %}
 </ul>
+</div>
 
+<div class=skillcol>
 <b>Concepts:</b>
 <ul>
   {% for concept in project.data.concepts %}
     <li>{{ concept }}</li>
   {% endfor %}
 </ul>
-
+</div>
+</div>
+</div>
+  <img src={{ project.data.image }} width="500">
+</article>
 {% endfor %}
 </section>
 
 <section>
 <h1 id="experience">Experience</h1>
 {% for position in collections.experience %}
+<article class=job>
+  <div class=head>
+    <div class=position>
 <h2>{{ position.data.title }}</h2>
 {{ position.data.employer }}
-{{ position.data.location }}
-{{ position.data.duration }}
+    </div>
+<div class=data>
+  <div>{{ position.data.duration }}</div>
+  <div>{{ position.data.location }}</div>
+</div>
+  </div>
 
+  <div class=content>
+    <div class=info>
 <ul>
   {% for bullet in position.data.bullets %}
     <li>{{ bullet }}</li>
   {% endfor %}
 </ul>
 
+<div class=skills>
+<div class=skillcol>
 <b>Technology:</b>
 <ul>
   {% for technology in position.data.technology %}
     <li>{{ technology }}</li>
   {% endfor %}
 </ul>
+</div>
 
+<div class=skillcol>
 <b>Languages:</b>
 <ul>
   {% for language in position.data.languages %}
     <li>{{ language }}</li>
   {% endfor %}
 </ul>
+</div>
 
+<div class=skillcol>
 <b>Concepts</b>
 <ul>
   {% for concept in position.data.concepts %}
     <li>{{ concept }}</li>
   {% endfor %}
 </ul>
+</div>
+</div>
+    </div>
+  <img src={{ position.data.image }} >
+  </div>
+</article>
 {% endfor %}
 </section>
 
 <section>
 <h1 id="education">Education</h1>
 {% for school in collections.education %}
+<div class=education>
+  <div class=info>
+<div class=position >
 <h2>{{ school.data.institution }}</h2>
-{{ school.data.duration }}
-{{ school.data.location }}
 {{ school.data.degree }}
+</div>
+<div class=data >
+  <div>{{ school.data.duration }}</div>
+  <div>{{ school.data.location }}</div>
+</div>
+  </div>
+</div>
 {% endfor %}
 </section>
 
 <section>
 <h1 id="about-me">About Me</h1>
 {% for me in collections["about me"] %}
-  {{ me.data.summary }}
-  <img src={{ me.data.image }} width="500">
+<div class=about-me >
+  <div class=info >
+    <div class=summary>{{ me.data.summary }}</div>
+    <div class=extras>
+    <div class=col>
   <h2>Interests</h2>
   <ul>
     {% for interest in me.data.interests %}
     <li>{{ interest }}</li>
     {% endfor %}
   </ul>
+    </div>
+    <div class=col>
   <h2>Hobbies</h2>
   <ul>
     {% for hobby in me.data.hobbies %}
     <li>{{ hobby }}</li>
     {% endfor %}
   </ul>
+    </div>
+    </div>
+</div>
+  <img src={{ me.data.image }} width="500">
+</div>
 {% endfor %}
 </section>
 

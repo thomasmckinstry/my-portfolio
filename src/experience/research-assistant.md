@@ -20,4 +20,5 @@ concepts:
     - Data Analysis
     - Literature Review
     - Qualitative Analysis
+image: assets/neat-lab.png
 ---

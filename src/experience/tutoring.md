@@ -16,4 +16,5 @@ languages:
 concepts:
     - Data Structures
     - Algorithms
+image: assets/wwu-logo.png 
 ---
