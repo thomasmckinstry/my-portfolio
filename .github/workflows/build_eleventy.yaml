@@ -24,11 +24,11 @@ jobs:
 
       # Installs dependencies for the eleventy site
       - name: Install Dependencies
-        run: npm install
+        run: npm install @11ty/eleventy
 
       # Builds the eleventy site
       - name: Build eleventy site
-        run: eleventy
+        run: npm run build
 
       - name: Upload static files
         id: deployment
