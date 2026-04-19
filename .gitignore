@@ -7,7 +7,7 @@ npm-debug.*
 .sass-cache
 .env
 .cache
-
-# Node modules and output
-node_modules
 dist
+
+# Node modules 
+node_modules
