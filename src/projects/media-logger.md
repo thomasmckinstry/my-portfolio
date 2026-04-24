@@ -3,6 +3,7 @@ title: Media Logger TUI
 duration: Dec. 2025 - Ongoing
 repoLink: https://github.com/thomasmckinstry/MediaLogger-TUI
 image: assets/medialogger-screenshot.png
+imageAlt: Screenshot of a terminal user interface for the MediaLogger Project
 tags: 
     - project
     - featured project

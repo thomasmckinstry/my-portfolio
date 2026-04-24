@@ -14,4 +14,5 @@ languages:
 concepts:
     - Relational Databases
 image: assets/We-are-WAWU.png
+imageAlt: Western Academic Workers Union Logo (Raised fist in front of a shovel and a pencil. We are WAWU-UAW)
 ---

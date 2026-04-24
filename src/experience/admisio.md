@@ -21,4 +21,5 @@ concepts:
     - Market Research
     - Data Analysis
 image: assets/admisio_logo.jpg
+imageAlt: Admisio Logo (Vector Image of a Graduation Cap)
 ---

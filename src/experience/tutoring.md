@@ -16,5 +16,6 @@ languages:
 concepts:
     - Data Structures
     - Algorithms
-image: assets/wwu-logo.png 
+image: assets/wwu-logo.png
+imageAlt: Western Washington University Logo (Vector image of a mountain and waves, Western Washington University)
 ---

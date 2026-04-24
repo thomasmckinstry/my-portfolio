@@ -21,4 +21,5 @@ concepts:
     - Literature Review
     - Qualitative Analysis
 image: assets/neat-lab.png
+imageAlt: NEAT Lab Logo (Infinity symbol with a gradient from pink to blue, NEAT Lab)
 ---

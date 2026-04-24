@@ -15,7 +15,7 @@
 
 
   {{ project.data.summary }}
-  <a href={{ project.data.repoLink }}>Github Repository</a>
+  <a href={{ project.data.repoLink }} aria-label="See the repository for {{ project.data.title }}">Github Repository</a>
 
 <div class=skills>
 <div class=skillcol>
@@ -46,7 +46,7 @@
 </div>
 </div>
 </div>
-  <img src={{ project.data.image }} width="500">
+<img src={{ project.data.image }} alt="{{ project.data.imageAlt }}" width="500">
 </article>
 {% endfor %}
 </section>
@@ -103,7 +103,7 @@
 </div>
 </div>
     </div>
-  <img src={{ position.data.image }} >
+    <img src={{ position.data.image }} alt="{{ position.data.imageAlt }}" height="250" >
   </div>
 </article>
 {% endfor %}
