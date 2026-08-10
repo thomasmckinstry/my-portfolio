@@ -7,6 +7,12 @@ footer {
   text-align: center;
 }
 
+footer img {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+}
+
 .upperfooter {
   display: flex;
   flex-direction: row;
