@@ -1,5 +1,5 @@
 ---
-summary: Hi! I'm Thomas, welcome to my portfolio website. I'm a recently graduated student of Western Washington University, and a hobbyist software engineer. I'm currently looking for work so if my experience matches a position you're looking to fill please reach out!
+summary: Hi! I'm Thomas, welcome to my portfolio website. I'm got my Bachelor's of Computer Science at Western Washington University. I am a full-time associate software engineer who is trying to improve my skills at systems programming and back-end development.
 image: assets/thomas.jpeg
 interests:
     - Golang
