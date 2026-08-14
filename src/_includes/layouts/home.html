@@ -5,7 +5,7 @@
 <section>
 <h1 id="projects">Projects</h1>
 
-{% for project in collections["featured project"] %}
+{% for project in collections["featured project"] | reverse %}
 <article class=project>
 <div class=info>
 <div class=head>
@@ -53,7 +53,7 @@
 
 <section>
 <h1 id="experience">Experience</h1>
-{% for position in collections.experience %}
+{% for position in collections.experience | reverse %}
 <article class=job>
   <div class=head>
     <div class=position>
