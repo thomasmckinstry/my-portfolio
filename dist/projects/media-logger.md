@@ -1,8 +1,9 @@
 ---
-title: Media Logger TUI
-duration: Dec. 2025 - Ongoing
-repoLink: https://github.com/thomasmckinstry/MediaLogger-TUI
-image: assets/medialogger-screenshot.png
+title: ouevre
+duration: Dec. 2025 - July 2026
+repoLink: https://codeberg.org/thomasmckinstry/ouevre
+image: assets/medialogger-demo.gif
+imageAlt: Screenshot of a terminal user interface for the ouevre project.
 tags: 
     - project
     - featured project
