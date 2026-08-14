@@ -5,9 +5,11 @@ interests:
     - Golang
     - Terminal Interfaces
     - Accessible Design
+    - Systems Programming (Novice)
 hobbies:
     - Birdwatching
     - Videogames/Boardgames
+    - Rock Climbing
     - Software Development
 tags:
     - about me
