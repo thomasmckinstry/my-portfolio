@@ -2,7 +2,7 @@
 title: ouevre
 duration: Dec. 2025 - July 2026
 repoLink: https://codeberg.org/thomasmckinstry/ouevre
-image: assets/medialogger-demo.gif
+image: assets/ouevre_img.png
 imageAlt: Screenshot of a terminal user interface for the ouevre project.
 tags: 
     - project

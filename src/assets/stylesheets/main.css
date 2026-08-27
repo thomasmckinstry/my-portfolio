@@ -4,6 +4,7 @@ h1 {
 
 .project {
   display: flex;
+  flex: 1;
   flex-direction: row;
   margin-bottom: 25px;
   padding: 15px;
@@ -11,6 +12,7 @@ h1 {
 
 .project .info {
   display: grid;
+  flex: 1;
   margin-right: 25px;
   padding: 10px;
   border: solid;
