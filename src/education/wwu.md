@@ -5,5 +5,4 @@ degree: Bachelor's of Computer Science
 location: Bellingham, WA
 tags: 
     - education
-image: assets/cs_diploma.jpg
 ---

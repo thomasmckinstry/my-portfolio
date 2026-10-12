@@ -11,6 +11,7 @@ h1 {
 
 .project .info {
   display: grid;
+  flex: 1;
   margin-right: 25px;
   padding: 10px;
   border: solid;
