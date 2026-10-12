@@ -7,7 +7,7 @@ imageAlt: Screenshot of a terminal user interface for the ouevre project.
 tags: 
     - project
     - featured project
-summary: A terminal user interface app designed to allow  user to log information about media (movies, books, etc.).
+summary: A terminal user interface app designed to allow  user to log information about media (movies, books, etc.). Entries can be filtered and sorted. Allows for taking notes and writing reviews. All data is stored locally.
 technology:
     - Bubbletea
     - SQLite

@@ -3,55 +3,6 @@
 {% block content %}
 
 <section>
-<h1 id="projects">Projects</h1>
-
-{% for project in collections["featured project"] | reverse %}
-<article class=project>
-<div class=info>
-<div class=head>
-<h2>{{ project.data.title }}</h2>
-<div class=duration>{{ project.data.duration }}</div>
-</div>
-
-
-  {{ project.data.summary }}
-  <a href={{ project.data.repoLink }} aria-label="See the repository for {{ project.data.title }}">Github Repository</a>
-
-<div class=skills>
-<div class=skillcol>
-<b>Technology:</b>
-<ul>
-  {% for technology in project.data.technology %}
-    <li>{{ technology }}</li>
-  {% endfor %}
-</ul>
-</div>
-
-<div class=skillcol>
-<b>Languages:</b>
-<ul>
-  {% for language in project.data.languages %}
-    <li>{{ language }}</li>
-  {% endfor %}
-</ul>
-</div>
-
-<div class=skillcol>
-<b>Concepts:</b>
-<ul>
-  {% for concept in project.data.concepts %}
-    <li>{{ concept }}</li>
-  {% endfor %}
-</ul>
-</div>
-</div>
-</div>
-<img src={{ project.data.image }} alt="{{ project.data.imageAlt }}" width="500">
-</article>
-{% endfor %}
-</section>
-
-<section>
 <h1 id="experience">Experience</h1>
 {% for position in collections.experienceSorted %}
 <article class=job>
@@ -105,6 +56,55 @@
     </div>
     <img src={{ position.data.image }} alt="{{ position.data.imageAlt }}" height="250" >
   </div>
+</article>
+{% endfor %}
+</section>
+
+<section>
+<h1 id="projects">Projects</h1>
+
+{% for project in collections["featured project"] | reverse %}
+<article class=project>
+<div class=info>
+<div class=head>
+<h2>{{ project.data.title }}</h2>
+<div class=duration>{{ project.data.duration }}</div>
+</div>
+
+
+  {{ project.data.summary }}
+  <a href={{ project.data.repoLink }} aria-label="See the repository for {{ project.data.title }}">Git</a>
+
+<div class=skills>
+<div class=skillcol>
+<b>Technology:</b>
+<ul>
+  {% for technology in project.data.technology %}
+    <li>{{ technology }}</li>
+  {% endfor %}
+</ul>
+</div>
+
+<div class=skillcol>
+<b>Languages:</b>
+<ul>
+  {% for language in project.data.languages %}
+    <li>{{ language }}</li>
+  {% endfor %}
+</ul>
+</div>
+
+<div class=skillcol>
+<b>Concepts:</b>
+<ul>
+  {% for concept in project.data.concepts %}
+    <li>{{ concept }}</li>
+  {% endfor %}
+</ul>
+</div>
+</div>
+</div>
+<img src={{ project.data.image }} alt="{{ project.data.imageAlt }}" width="500">
 </article>
 {% endfor %}
 </section>

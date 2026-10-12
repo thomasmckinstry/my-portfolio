@@ -4,9 +4,9 @@ image: assets/thomas.jpeg
 imageAlt: A picture of me.
 interests:
     - Golang
-    - Terminal Interfaces
-    - Accessible Design
-    - Systems Programming (Novice)
+    - Backend Development
+    - Performant Software
+    - Systems Programming
 hobbies:
     - Birdwatching
     - Videogames/Boardgames
