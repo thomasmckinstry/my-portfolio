@@ -13,10 +13,8 @@ export default function(eleventyConfig) {
     let experience = collectionsApi.getAll().filter(function(item) {
       return item.data.order != null
     }).sort((a, b) => {
-      console.log(a.data.order, a.data.title, b.data.order, b.data.title)
       return a.data.order - b.data.order
     });
-    console.log(experience)
     return experience
   });
 }
