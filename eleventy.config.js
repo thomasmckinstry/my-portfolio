@@ -4,32 +4,24 @@ export default function(eleventyConfig) {
   eleventyConfig.setInputDirectory('src');
   eleventyConfig.setOutputDirectory('dist');
   eleventyConfig.addPassthroughCopy('src/assets');
-  eleventyConfig.addPassthroughCopy('src/projects');
   eleventyConfig.addPassthroughCopy('src/assets/stylesheets');
 
   eleventyConfig.addDataExtension("yaml", (contents) => YAML.parse(contents));
+  eleventyConfig.addGlobalData("permalink", "{{ page.filePathStem }}.html");
 
-
-  // Creates and returns a collection of work that is set to be featured
-  eleventyConfig.addCollection('blog', (collection) => {
-    return [...collection.getFilteredByGlob('./src/posts/*.md')].reverse();
+  eleventyConfig.addCollection("experienceSorted", function(collectionsApi) {
+    let experience = collectionsApi.getAll().filter(function(item) {
+      return item.data.order != null
+    }).sort((a, b) => {
+      console.log(a.data.order, a.data.title, b.data.order, b.data.title)
+      return a.data.order - b.data.order
+    });
+    console.log(experience)
+    return experience
   });
 }
-
 
 export const config = {
   markdownTemplateEngine: 'njk',
   htmlTemplateEngine: 'njk',
 };
-
-/**
- * Takes a collection and returns it back in display order
- *
- * @param {Array} collection The 11ty collection
- * @returns {Array} the sorted collection
- */
-function sortByDisplayOrder(collection) {
-  return collection.sort((a, b) =>
-    Number(a.data.displayOrder) > Number(b.data.displayOrder) ? 1 : -1,
-  );
-}

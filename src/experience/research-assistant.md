@@ -1,4 +1,5 @@
 ---
+order: 4
 title: Research Assistant
 employer: NEAT Lab - Western Washington University
 location: Bellingham, WA

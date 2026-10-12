@@ -1,4 +1,5 @@
 ---
+order: 3
 title: DIDO Commitee Member
 employer: Western Academic Workers Union
 location: Bellingham, WA

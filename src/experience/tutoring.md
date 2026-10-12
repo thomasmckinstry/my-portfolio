@@ -1,4 +1,5 @@
 ---
+order: 5
 title: Computer Science Tutor
 employer: Western Washington University
 location: Bellingham, WA

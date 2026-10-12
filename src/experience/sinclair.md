@@ -1,4 +1,5 @@
 ---
+order: 1
 title: Associate Software Engineer
 employer: Sinclair Digital
 location: Seattle, WA
